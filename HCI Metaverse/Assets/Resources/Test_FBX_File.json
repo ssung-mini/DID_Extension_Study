@@ -1,0 +1,26 @@
+{
+  "model": [
+    {
+      "attributes": [
+        {
+          "trait_type": "Unknown",
+          "value": "Unknown"
+        }
+      ],
+      "description": "We are HY Univ. Computer Science HCI Lab. This is a test trial.",
+      "modelFBX": "https://ipfs.io/ipfs/QmNstaMBMh99WYBazx2UCnFcQG6P7SwJzcLjriFBLW3ZwT?filename=Red_Racer.fbx",
+      "name": "Test_FBX_File_1"
+    },
+    {
+      "attributes": [
+        {
+          "trait_type": "Unknown",
+          "value": "Unknown"
+        }
+      ],
+      "description": "We are HY Univ. Computer Science HCI Lab. This is a test trial.",
+      "modelFBX": "https://ipfs.io/ipfs/QmNstaMBMh99WYBazx2UCnFcQG6P7SwJzcLjriFBLW3ZwT?filename=Red_Racer.fbx",
+      "name": "Test_FBX_File_2"
+    }
+  ]
+}
