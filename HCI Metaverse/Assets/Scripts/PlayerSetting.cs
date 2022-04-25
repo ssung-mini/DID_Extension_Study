@@ -13,32 +13,21 @@ public class PlayerSetting : MonoBehaviour
 
         if (!Resources.Load<GameObject>(playerName))
         {
-            var PlayerPrefab = (GameObject)Resources.Load<GameObject>("Models/" + playerName);
-            var Playerinstance = PrefabUtility.InstantiatePrefab(PlayerPrefab) as GameObject;
+            var PlayerPrefab = (GameObject)Resources.Load<GameObject>("Models/" + playerName); // 아바타 model fbx파일 가져오기
+            var Playerinstance = PrefabUtility.InstantiatePrefab(PlayerPrefab) as GameObject; // prefab 동적으로 생성
 
+            /* Player  설정(애니메이션, 무브먼트, 포톤 설정 */
             Animator animator = Playerinstance.GetComponent<Animator>();
             animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Player Controller");
             animator.cullingMode = AnimatorCullingMode.CullUpdateTransforms;
             animator.applyRootMotion = true;
 
-            Rigidbody rigidbody = Playerinstance.AddComponent<Rigidbody>();
-            rigidbody.angularDrag = 30;
-            rigidbody.mass = 9.8f;
-            rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;
-            rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-
-            CapsuleCollider capsuleCollider = Playerinstance.gameObject.AddComponent<CapsuleCollider>();
-            capsuleCollider.center = new Vector3(0, 1, 0);
-            capsuleCollider.material = Resources.Load<PhysicMaterial>("Player Material");
-            capsuleCollider.radius = 0.2f;
-            capsuleCollider.height = 2;
-
             Playerinstance.AddComponent<PlayerMovement>();
-            Playerinstance.AddComponent<CameraSetUp>();
 
+            /* 네트워크 설정 */
             PhotonAnimatorView photonAnimatorView = Playerinstance.AddComponent<PhotonAnimatorView>();
             photonAnimatorView.SetLayerSynchronized(0, PhotonAnimatorView.SynchronizeType.Continuous);
-            photonAnimatorView.SetParameterSynchronized("inputValue_Walk", PhotonAnimatorView.ParameterType.Float, PhotonAnimatorView.SynchronizeType.Discrete);
+            photonAnimatorView.SetParameterSynchronized("inputValue_Walk", PhotonAnimatorView.ParameterType.Float, PhotonAnimatorView.SynchronizeType.Discrete); // 애니메이터 파라미타
 
             Playerinstance.AddComponent<PhotonTransformView>();
 
@@ -47,7 +36,7 @@ public class PlayerSetting : MonoBehaviour
             photonView.Synchronization = ViewSynchronization.Unreliable;
             photonView.observableSearch = PhotonView.ObservableSearch.AutoFindAll;
 
-            var Playervariant = PrefabUtility.SaveAsPrefabAsset(Playerinstance, "Assets/Resources/" + playerName + ".prefab");
+            var Playervariant = PrefabUtility.SaveAsPrefabAsset(Playerinstance, "Assets/Resources/" + playerName + ".prefab"); // 설정된 아바타 prefab 만들기
         }
     }
 

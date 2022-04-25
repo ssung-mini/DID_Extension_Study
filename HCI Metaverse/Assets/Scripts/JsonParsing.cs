@@ -46,9 +46,6 @@ public class JsonParsing : MonoBehaviour
 
             foreach (PlayerInformation playerInformation in playerInfoList.model)
             {
-
-
-
                 FBXpath = Application.dataPath + "/Resources/Models/" + playerInformation.name + ".fbx";
                 if (!File.Exists(FBXpath)) downLoadFBX(playerInformation.modelFBX, FBXpath);
             }

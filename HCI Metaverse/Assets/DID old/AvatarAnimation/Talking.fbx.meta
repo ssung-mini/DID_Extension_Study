@@ -1,0 +1,602 @@
+fileFormatVersion: 2
+guid: d5b7acf90035ceb4d809064060f86653
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: -6165926856000714008
+    second: TalkingGestureAnimation
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 2021-09-08 04.41.56 PM_015' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'mocap_Spine1' has translation
+      animation that will be discarded.\n\t'mocap_Head' has translation animation
+      that will be discarded.\n\t'mocap_LeftHand' has translation animation that
+      will be discarded.\n\t'mocap_RightHand' has translation animation that will
+      be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: TalkingGestureAnimation
+      takeName: Take 2021-09-08 04.41.56 PM_015
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 600
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: mocap_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mocap_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: TalkingGestureAnimation(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Take 2021-09-08 04.41.56 PM_015
+      parentName: TalkingGestureAnimation(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_WaistLFront
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0013558639, y: 0.009571912, z: 0.0011150873}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_WaistRFront
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0017491768, y: 0.009683213, z: 0.00087597576}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_WaistLBack
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0011760788, y: 0.00977196, z: -0.0007561324}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_WaistRBack
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0013353245, y: 0.009886963, z: -0.0008614975}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_BackTop
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.000036652014, y: 0.013958069, z: -0.0009088499}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_Chest
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.00019702909, y: 0.012666523, z: 0.0013692621}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_BackLeft
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0005627047, y: 0.011893628, z: -0.0011431723}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_BackRight
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.00061253674, y: 0.0117689585, z: -0.0011854914}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_HeadTop
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0002149647, y: 0.017058033, z: 0.00012933246}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_HeadFront
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0004551393, y: 0.016427143, z: 0.001479927}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_HeadSide
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0012931238, y: 0.015977522, z: 0.00021187865}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LShoulderBack
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0015568262, y: 0.013168704, z: -0.0009371875}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LShoulderTop
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0018752548, y: 0.013963092, z: 0.000082868086}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LElbowOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0028841728, y: 0.010413981, z: -0.000016514885}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LUArmHigh
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0025617855, y: 0.01173561, z: -0.00034326728}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LHandOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0029207875, y: 0.0069641196, z: 0.0010272509}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LWristOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0030178593, y: 0.007822849, z: 0.0007414975}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LWristIn
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0023509013, y: 0.008148376, z: 0.0017415484}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RShoulderBack
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.001643387, y: 0.01281705, z: -0.0012415888}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RShoulderTop
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0020194903, y: 0.013778811, z: -0.00037040206}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RElbowOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0030421044, y: 0.010245563, z: -0.00018770681}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RUArmHigh
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0025849142, y: 0.011142171, z: -0.0007629549}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RHandOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0032701823, y: 0.0069448063, z: 0.00072841515}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RWristOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0032737236, y: 0.0075686807, z: 0.00048415465}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RWristIn
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0026034194, y: 0.0079191765, z: 0.001479035}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LKneeOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0015806791, y: 0.0048975707, z: 0.00047038897}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LThigh
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0011995464, y: 0.007344064, z: 0.0015030771}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LAnkleOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0016530738, y: 0.00048478608, z: -0.00023714175}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LShin
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0011012062, y: 0.0019561006, z: 0.00032922544}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LToeOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0019805783, y: 0.00035364053, z: 0.0011624654}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LToeIn
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: -0.0011163342, y: 0.00036993824, z: 0.001407262}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RKneeOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0020489516, y: 0.00482909, z: 0.0003720774}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RThigh
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0014234105, y: 0.0062906914, z: 0.0012177979}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RAnkleOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0022004182, y: 0.00043349783, z: -0.00019013455}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RShin
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0013799631, y: 0.0034347563, z: 0.0005393471}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RToeOut
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0023225027, y: 0.00039034855, z: 0.001280068}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RToeIn
+      parentName: Take 2021-09-08 04.41.56 PM_015
+      position: {x: 0.0015576776, y: 0.0003534381, z: 0.0015560458}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_Hips
+      parentName: TalkingGestureAnimation(Clone)
+      position: {x: -1.4551915e-11, y: 0.0092269955, z: 0.00015267474}
+      rotation: {x: -0.032156758, y: 0.030484606, z: 0.0049461294, w: 0.9990056}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_Spine
+      parentName: mocap_Hips
+      position: {x: -0, y: 0.00076380884, z: 0}
+      rotation: {x: -0.044556003, y: 0.010403383, z: 0.003664623, w: 0.998946}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_Spine1
+      parentName: mocap_Spine
+      position: {x: 1.8626451e-11, y: 0.0017507594, z: 1.4901161e-10}
+      rotation: {x: 0.033480722, y: 0.0034755797, z: -0.012300183, w: 0.99935764}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_Neck
+      parentName: mocap_Spine1
+      position: {x: -0, y: 0.0020237353, z: 0}
+      rotation: {x: 0.09563362, y: 0.0019409389, z: -0.017377226, w: 0.99526304}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_Head
+      parentName: mocap_Neck
+      position: {x: -0, y: 0.0014437849, z: 0.00018629484}
+      rotation: {x: 0.014147063, y: -0.0036815286, z: 0.026059225, w: 0.99955356}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LeftShoulder
+      parentName: mocap_Spine1
+      position: {x: -0.00037232522, y: 0.0016313778, z: -0.00002078235}
+      rotation: {x: 0.10517669, y: -0.002565339, z: 0.02018767, w: 0.9942453}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LeftArm
+      parentName: mocap_LeftShoulder
+      position: {x: -0.0011887745, y: 0, z: 0}
+      rotation: {x: 0.4788757, y: 0.0013901938, z: -0.0011096586, w: 0.87788093}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LeftForeArm
+      parentName: mocap_LeftArm
+      position: {x: -0.0031695093, y: 0, z: 0}
+      rotation: {x: -0.17715716, y: 0.011604489, z: -0.021488458, w: 0.9838795}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LeftHand
+      parentName: mocap_LeftForeArm
+      position: {x: -0.0024194305, y: 0, z: -0.0000000021606683}
+      rotation: {x: -0.17016636, y: -0.16286317, z: 0.07469816, w: 0.9689887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RightShoulder
+      parentName: mocap_Spine1
+      position: {x: 0.00037278436, y: 0.0016313778, z: -0.00002078235}
+      rotation: {x: 0.09888164, y: 0.030473143, z: -0.032899782, w: 0.99408823}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RightArm
+      parentName: mocap_RightShoulder
+      position: {x: 0.0011887745, y: 0, z: 0}
+      rotation: {x: 0.4385403, y: -0.012936108, z: 0.040112663, w: 0.89772266}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RightForeArm
+      parentName: mocap_RightArm
+      position: {x: 0.0031695093, y: 0, z: 0}
+      rotation: {x: -0.13090536, y: -0.016813712, z: 0.015525743, w: 0.99113065}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RightHand
+      parentName: mocap_RightForeArm
+      position: {x: 0.0025123633, y: 5.9604643e-10, z: -3.72529e-10}
+      rotation: {x: -0.12794794, y: 0.044880543, z: 0.049689777, w: 0.9895181}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LeftUpLeg
+      parentName: mocap_Hips
+      position: {x: -0.00093147415, y: 0, z: 0}
+      rotation: {x: -0.003882913, y: -0.036553763, z: -0.036474105, w: 0.9986583}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LeftLeg
+      parentName: mocap_LeftUpLeg
+      position: {x: -0, y: -0.004002141, z: 0}
+      rotation: {x: 0.1162405, y: -0.046199482, z: -0.007585584, w: 0.99211705}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LeftFoot
+      parentName: mocap_LeftLeg
+      position: {x: -0, y: -0.0044692582, z: 0}
+      rotation: {x: -0.092735365, y: -0.031819023, z: 0.02642009, w: 0.9948315}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_LeftToeBase
+      parentName: mocap_LeftFoot
+      position: {x: -0, y: -0.0006054582, z: 0.0013972113}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RightUpLeg
+      parentName: mocap_Hips
+      position: {x: 0.00093147415, y: 0, z: 0}
+      rotation: {x: -0.009412256, y: -0.012288591, z: 0.043797247, w: 0.9989205}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RightLeg
+      parentName: mocap_RightUpLeg
+      position: {x: -0, y: -0.004002141, z: 0}
+      rotation: {x: 0.10280515, y: 0.025772728, z: -0.003475971, w: 0.9943615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RightFoot
+      parentName: mocap_RightLeg
+      position: {x: -0, y: -0.0044692582, z: 0}
+      rotation: {x: -0.06698803, y: -0.020331258, z: -0.032823887, w: 0.9970065}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mocap_RightToeBase
+      parentName: mocap_RightFoot
+      position: {x: -0, y: -0.0006054582, z: 0.0013972113}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

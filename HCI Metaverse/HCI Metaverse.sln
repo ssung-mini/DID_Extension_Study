@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonUnityNetworking.Utilities", "PhotonUnityNetworking.Utilities.csproj", "{C7D29EBD-4C43-97F0-0A6B-F1BB76C69754}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D7687D06-9288-4BCE-B835-EBBCE911F5D7}"
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonUnityNetworking.Editor", "PhotonUnityNetworking.Editor.csproj", "{69E607A9-2F9F-C384-6DBC-B43B27A018A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor", "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj", "{275BBB54-2279-A747-3C1E-6672377407A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{1EBF00DD-66C7-ED00-6DB4-7088FB83B157}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PunDemos.DemoSlotcarEditor", "PunDemos.DemoSlotcarEditor.csproj", "{6A4746EF-8B50-9579-363E-CF47D31C48A2}"
 EndProject
@@ -61,6 +63,10 @@ Global
 		{275BBB54-2279-A747-3C1E-6672377407A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{275BBB54-2279-A747-3C1E-6672377407A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{275BBB54-2279-A747-3C1E-6672377407A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EBF00DD-66C7-ED00-6DB4-7088FB83B157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EBF00DD-66C7-ED00-6DB4-7088FB83B157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EBF00DD-66C7-ED00-6DB4-7088FB83B157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EBF00DD-66C7-ED00-6DB4-7088FB83B157}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6A4746EF-8B50-9579-363E-CF47D31C48A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A4746EF-8B50-9579-363E-CF47D31C48A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A4746EF-8B50-9579-363E-CF47D31C48A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
