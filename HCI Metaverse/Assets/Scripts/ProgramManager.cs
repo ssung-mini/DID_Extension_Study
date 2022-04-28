@@ -18,7 +18,7 @@ public class ProgramManager : MonoBehaviourPunCallbacks
     public GameObject playerInfoPanel;
 
     /* Player Prefab */
-    public GameObject playerPrefab;
+    public GameObject player;
 
     /* NPC Prefab */
     //public GameObject[] NFT_NPC = new GameObject[6];
@@ -63,20 +63,60 @@ public class ProgramManager : MonoBehaviourPunCallbacks
         }
         */
 
-        // Player 생성 (Resource 폴더에 Prefab 파일이 존재해야 함)
+        /* Player Setting (Prefab in /Resource) */
         float posX = -0.904f;
         float posY = -5.246f;
         float posZ = 1.49f;
-        GameObject player = PhotonNetwork.Instantiate(PhotonNetwork.NickName, new Vector3(posX, posY, posZ), Quaternion.Euler(0, -90, 0));
+        //GameObject getPlayerPrefab = Resources.Load<GameObject>("NFT_Models/" + PhotonNetwork.NickName);
+        GameObject temp = PhotonNetwork.Instantiate(PhotonNetwork.NickName, new Vector3(posX, posY, posZ), Quaternion.Euler(0, -90, 0));
+        Instantiate(player, new Vector3(posX, posY, posZ), Quaternion.Euler(0, -90, 0));
 
 
-        GameObject[] backgroundModels = Resources.LoadAll<GameObject>("NFT_Models/");
-        /* 피험자들의 아바타를 배경요소로 배치
-        for(int i = 0; i < backgroundModels.Length; i++)
+        /* Background Environment Model Setting */
+        GameObject[] tempNPCModels = Resources.LoadAll<GameObject>("NFT_Models/NPC/");
+        GameObject[] backgroundModels = new GameObject[backgroundPositions.Length];
+        
+        for(int i = 0; i < backgroundPositions.Length; i++)
         {
-            Instantiate(backgroundModels[i], backgroundPositions[i].transform.position, backgroundPositions[i].transform.rotation);
+            if(tempNPCModels[i].name != PhotonNetwork.NickName)
+            {
+                backgroundModels[i] = Instantiate(tempNPCModels[i], backgroundPositions[i].transform.position, backgroundPositions[i].transform.rotation);
+
+                if(i == 0 || i == 1 || i == 10 || i == 11)
+                {
+                    Animator animator = backgroundModels[i].GetComponent<Animator>();
+                    animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("BackgroundAnimation/Background_Talking_Animator");
+                    animator.cullingMode = AnimatorCullingMode.CullUpdateTransforms;
+                    animator.applyRootMotion = true;
+                }
+                
+                else
+                {
+                    Animator animator = backgroundModels[i].GetComponent<Animator>();
+                    animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("BackgroundAnimation/Background_Based_Animator");
+                    animator.cullingMode = AnimatorCullingMode.CullUpdateTransforms;
+                    animator.applyRootMotion = true;
+                }
+                
+            }
+            
         }
-        */
+        /* Talk Animation */
+        backgroundModels[0].GetComponent<Animator>().SetBool("Talk 2", true);
+        backgroundModels[1].GetComponent<Animator>().SetBool("Talk 3", true);
+
+        backgroundModels[10].GetComponent<Animator>().SetBool("Talk 3", true);
+        backgroundModels[11].GetComponent<Animator>().SetBool("Talk 2", true);
+
+        /* Base Animation */
+        backgroundModels[2].GetComponent<Animator>().SetBool("SwingDancing", true);
+        backgroundModels[3].GetComponent<Animator>().SetBool("SwingDancing 2", true);
+        backgroundModels[4].GetComponent<Animator>().SetBool("Hold", true);
+        backgroundModels[5].GetComponent<Animator>().SetBool("Stroll", true);
+        backgroundModels[6].GetComponent<Animator>().SetBool("SwingDancing", true);
+        backgroundModels[7].GetComponent<Animator>().SetBool("HipHop", true);
+        backgroundModels[8].GetComponent<Animator>().SetBool("Hold", true);
+        backgroundModels[9].GetComponent<Animator>().SetBool("Stroll", true);
 
         //float randomPosX = Random.Range(-3.0f, 3.0f);
         //float randomPosY = -5.246f;
@@ -85,48 +125,4 @@ public class ProgramManager : MonoBehaviourPunCallbacks
         //npcAnimation = player.AddComponent<NPCAnimation>();
         //npcAnimation.settingNPC();
     }
-
-    private void Update()
-    {
-        //StartCoroutine(ViewPlayerList());
-
-        /*
-        if(Input.GetKeyDown(KeyCode.C))
-        {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-        }
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        */
-
-        //npcAnimation.animationNPC();
-    }
-
-    /*IEnumerator ViewPlayerList()
-    {
-        Player[] players = PhotonNetwork.PlayerList;
-
-        foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
-        {
-            Destroy(player);
-        }
-
-        int scrollView_y = 0;
-        for (int i = 0; i < players.Length; i++)
-        {
-            GameObject playerInstance = Instantiate(playerInfoPanel, new Vector3(0, scrollView_y, 0), Quaternion.identity);
-            playerInstance.transform.SetParent(GameObject.Find("Viewport").transform.Find("Content").transform);
-
-            scrollView_y -= 55;
-
-            playerInstance.transform.Find("Player Text").GetComponent<Text>().text = players[i].NickName;
-
-        }
-
-        yield return new WaitForSeconds(1.0f);
-    }*/
 }

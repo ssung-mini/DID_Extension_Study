@@ -5,10 +5,16 @@ using System;
 
 public class DemoScript : MonoBehaviour
 {
-    public List<GameObject> Mirrors;
+    public Transform RotateMirror;
+    public float RotateMirrorSpeed = 15.0f;
+    [Range(10.0f, 75.0f)]
+    public float RotateMirrorAngle = 30.0f;
     public GameObject LightBulb;
-    public UnityEngine.UI.Toggle RecursionToggle;
+    public GameObject Head;
+    public GameObject Body;
+    public bool ShowFPS = true;
 
+    private float deltaTime;
     private float rotationModifier = -1.0f;
     private float moveModifier = 1.0f;
     private Material lightBulbMaterial;
@@ -28,7 +34,7 @@ public class DemoScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        originalRotation = transform.localRotation;
+        originalRotation = Head.transform.localRotation;
         Renderer r = LightBulb.GetComponent<Renderer>();
         if (Application.isPlaying)
         {
@@ -40,24 +46,32 @@ public class DemoScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RotateMirror();
+        deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
+        RotateMirrorFunc();
         MoveLightBulb();
         UpdateMouseLook();
         UpdateMovement();
     }
 
-    public void MirrorRecursionToggled()
+    private void OnGUI()
     {
-        ChangeMirrorRecursion();
-    }
-
-    public void ChangeMirrorRecursion()
-    {
-        foreach (GameObject o in Mirrors)
+        if (!ShowFPS)
         {
-            MirrorScript s = o.GetComponent<MirrorScript>();
-            s.MirrorRecursion = RecursionToggle.isOn;
+            return;
         }
+
+        int w = Screen.width, h = Screen.height;
+
+        GUIStyle style = new GUIStyle();
+
+        Rect rect = new Rect(8, 8, w, h * 2 / 100);
+        style.alignment = TextAnchor.UpperLeft;
+        style.fontSize = h * 2 / 100;
+        style.normal.textColor = Color.white;
+        float msec = deltaTime * 1000.0f;
+        float fps = 1.0f / deltaTime;
+        string text = string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps);
+        GUI.Label(rect, text, style);
     }
 
     private void UpdateMovement()
@@ -66,47 +80,49 @@ public class DemoScript : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(0.0f, 0.0f, speed);
+            transform.Translate(Head.transform.forward * speed);
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(0.0f, 0.0f, -speed);
+            transform.Translate(Head.transform.forward * -speed);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(-speed, 0.0f, 0.0f);
+            transform.Translate(Head.transform.right * -speed);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(speed, 0.0f, 0.0f);
-        }
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            RecursionToggle.isOn = !RecursionToggle.isOn;
+            transform.Translate(Head.transform.right * speed);
         }
     }
 
-    private void RotateMirror()
+    private void RotateMirrorFunc()
     {
-        GameObject Mirror = Mirrors[0];
-        float angle = Mirror.transform.rotation.eulerAngles.y;
-        if (angle > 65 && angle < 100)
+        if (RotateMirror == null)
+        {
+            return;
+        }
+
+        Vector3 angles = RotateMirror.localRotation.eulerAngles;
+        float y = angles.y;
+        RotateMirror.transform.Rotate(Vector3.up, rotationModifier * Time.deltaTime * RotateMirrorSpeed, Space.Self);
+        angles = RotateMirror.localRotation.eulerAngles;
+        if (y >= 360.0f - RotateMirrorAngle && angles.y > 180.0f && angles.y < 360.0f - RotateMirrorAngle)
         {
             rotationModifier = -rotationModifier;
-            angle = angle - 65.0f;
-            Mirror.transform.Rotate(0.0f, -angle, 0.0f);
+            angles.y = 360.0f - RotateMirrorAngle;
+            Quaternion rot = RotateMirror.localRotation;
+            rot.eulerAngles = angles;
+            RotateMirror.localRotation = rot;
         }
-        else if (angle > 100 && angle < 295)
+        else if (angles.y >= RotateMirrorAngle && angles.y < 180.0f && y < RotateMirrorAngle)
         {
             rotationModifier = -rotationModifier;
-            angle = 295.0f - angle;
-            Mirror.transform.Rotate(0.0f, angle, 0.0f);
-        }
-        else
-        {
-            Mirror.transform.Rotate(0.0f, rotationModifier * Time.deltaTime * 20.0f, 0.0f);
+            angles.y = RotateMirrorAngle;
+            Quaternion rot = RotateMirror.localRotation;
+            rot.eulerAngles = angles;
+            RotateMirror.localRotation = rot;
         }
     }
 
@@ -148,7 +164,8 @@ public class DemoScript : MonoBehaviour
             Quaternion xQuaternion = Quaternion.AngleAxis(rotationX, Vector3.up);
             Quaternion yQuaternion = Quaternion.AngleAxis(rotationY, -Vector3.right);
 
-            transform.localRotation = originalRotation * xQuaternion * yQuaternion;
+            Head.transform.localRotation = originalRotation * xQuaternion * yQuaternion;
+            Body.transform.localRotation = originalRotation * xQuaternion;
         }
         else if (axes == RotationAxes.MouseX)
         {
@@ -156,7 +173,8 @@ public class DemoScript : MonoBehaviour
             rotationX = ClampAngle(rotationX, minimumX, maximumX);
 
             Quaternion xQuaternion = Quaternion.AngleAxis(rotationX, Vector3.up);
-            transform.localRotation = originalRotation * xQuaternion;
+            Body.transform.localRotation = originalRotation * xQuaternion;
+            Head.transform.localRotation = originalRotation * xQuaternion;
         }
         else
         {
@@ -164,7 +182,7 @@ public class DemoScript : MonoBehaviour
             rotationY = ClampAngle(rotationY, minimumY, maximumY);
 
             Quaternion yQuaternion = Quaternion.AngleAxis(-rotationY, Vector3.right);
-            transform.localRotation = originalRotation * yQuaternion;
+            Head.transform.localRotation = originalRotation * yQuaternion;
         }
     }
 

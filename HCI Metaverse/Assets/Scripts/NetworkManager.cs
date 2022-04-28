@@ -61,8 +61,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
             foreach (PlayerInformation playerModel in jsonparsing.playerInfoList.model)
             {
-                //PlayerSetting.doCreatePrefab(playerModel.name);
-                //NPCSetting.doCreateNPCPrefab(playerModel.name);
+                Debug.Log("ÇÁ¸®ÆÕ »ý¼º");
+                PlayerSetting.doCreatePrefab(playerModel.name);
+                NPCSetting.doCreateNPCPrefab(playerModel.name);
             }
 
             PhotonNetwork.JoinRandomRoom();

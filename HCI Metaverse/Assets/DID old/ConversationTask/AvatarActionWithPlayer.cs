@@ -18,7 +18,7 @@ public class AvatarActionWithPlayer : MonoBehaviour
     public AudioClip conversationBlock2_Generic;         // Trial 2의 대사 남성
     public AudioClip conversationBlock2_NFTbased;        // Trial 2의 대사 여성
 
-    private float gazeDistance = 7.5f;                  // Avatar가 Player를 응시하기 시작하는 거리, 이 거리 안으로 돌아오면 Avatar가 Player를 쳐다보게 된다.
+    private float gazeDistance = 6.8f;                  // Avatar가 Player를 응시하기 시작하는 거리, 이 거리 안으로 돌아오면 Avatar가 Player를 쳐다보게 된다.
     private float conversationDistance = 6f;          // Avatar가 Player와 대화를 시작하게 되는 거리, 이 거리 안으로 돌아오면 Avatar가 Player에게 말을 건다.
 
     private Vector3 initialPosition;                    // Avater가 갖고 있는 위치. 정해진 위치에서 벗어나지 않도록 Update를 통해 보정.
@@ -112,13 +112,13 @@ public class AvatarActionWithPlayer : MonoBehaviour
         if (distance < conversationDistance)
         {
             distanceType = 2;
-            Debug.Log("distancetype : 2");
+            //Debug.Log("distancetype : 2");
         }
         else if (distance < gazeDistance)
         {
             //StopCoroutine(conversationCoroutine);
             distanceType = 1;
-            Debug.Log("distancetype : 1");
+            //Debug.Log("distancetype : 1");
             //conversationSound.Stop();
             //isConversation = false;
         }
@@ -181,7 +181,7 @@ public class AvatarActionWithPlayer : MonoBehaviour
             case 1:
 
                 linesCanvas.SetActive(false);
-                //virtualMirror.SetActive(false);
+                virtualMirror.SetActive(false);
                 //if (avatarType == 1) idCard.SetActive(true);
                 AvatarRotation();
                 if (prevDistanceType != distanceType)
