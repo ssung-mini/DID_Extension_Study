@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
+using TMPro;
 
 public enum AvatarType
 {
@@ -11,28 +12,45 @@ public enum AvatarType
     NFT_Avatar = 1
 }
 
+public enum InformationLevel
+{
+    Level_1 = 0, 
+    Level_2 = 1, 
+    Level_3 = 2
+}
+
 public class ProgramManager : MonoBehaviourPunCallbacks
 {
-
-    /* Player Info Panel */
-    public GameObject playerInfoPanel;
-
     /* Player Prefab */
     public GameObject player;
+    public GameObject infoTextPrefab;
 
     /* NPC Prefab */
     //public GameObject[] NFT_NPC = new GameObject[6];
     //public GameObject[] Generic_NPC = new GameObject[6];
 
-    public GameObject genericAvatarHolder;
-    public GameObject nftAvatarHolder;
+    public GameObject genericAvatarHolder_1; public GameObject genericAvatarHolder_2;
+    public GameObject nftAvatarHolder_1; public GameObject nftAvatarHolder_2;
 
     public GameObject[] backgroundPositions;
 
+    /* Player Info Panel */
+    public int _participantsIndex;
+    public static int participantsIndex;
+
+    public InformationLevel _informationLevel;
+    public static InformationLevel informationLevel;
     public AvatarType _avatarType;   // Generic Avatar or NFT Avatar
     public static AvatarType avatarType;
+    
     public int _nowTrial;
     public static int nowTrial;
+
+    public static string text_Level1;
+    public static string text_Level2;
+    public static string text_Level3;
+
+    public static string playerNickname;
 
 
     //public NPCAnimation npcAnimation;
@@ -41,18 +59,30 @@ public class ProgramManager : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        informationLevel = _informationLevel;
         avatarType = _avatarType;
         nowTrial = _nowTrial;
+        participantsIndex = _participantsIndex;
+        playerNickname = PhotonNetwork.NickName;
+
+        CsvWritingManager.trialNumber = nowTrial;
+        CsvWritingManager.avatarType = avatarType.ToString();
+        Debug.Log(avatarType.ToString());
+
+        genericAvatarHolder_1.SetActive(false);
+        genericAvatarHolder_2.SetActive(false);
+        nftAvatarHolder_1.SetActive(false);
+        nftAvatarHolder_2.SetActive(false);
 
         if (avatarType == 0)
         {
-            genericAvatarHolder.SetActive(true);
-            nftAvatarHolder.SetActive(false);
+            if(nowTrial == 1) genericAvatarHolder_1.SetActive(true);
+            else if (nowTrial == 2) genericAvatarHolder_2.SetActive(true);
         }
         else
         {
-            genericAvatarHolder.SetActive(false);
-            nftAvatarHolder.SetActive(true);
+            if (nowTrial == 1) nftAvatarHolder_1.SetActive(true);
+            else if (nowTrial == 2) nftAvatarHolder_2.SetActive(true);
         }
 
         /*
@@ -68,8 +98,41 @@ public class ProgramManager : MonoBehaviourPunCallbacks
         float posY = -5.246f;
         float posZ = 1.49f;
         //GameObject getPlayerPrefab = Resources.Load<GameObject>("NFT_Models/" + PhotonNetwork.NickName);
-        GameObject temp = PhotonNetwork.Instantiate(PhotonNetwork.NickName, new Vector3(posX, posY, posZ), Quaternion.Euler(0, -90, 0));
+        GameObject temp = PhotonNetwork.Instantiate(playerNickname, new Vector3(posX, posY, posZ), Quaternion.Euler(0, -90, 0));
         Instantiate(player, new Vector3(posX, posY, posZ), Quaternion.Euler(0, -90, 0));
+
+        Debug.Log("Guest Mode : " + playerNickname.Equals("Guest"));
+
+        if(!playerNickname.Equals("Guest"))
+        {
+            GameObject infoText = Instantiate(infoTextPrefab, new Vector3(posX, (posY - 0.05f), posZ), Quaternion.Euler(0, -270, 0));
+
+            if ((int)informationLevel == 0)
+            {
+                infoText.transform.GetChild(0).GetComponent<TextMeshPro>().SetText(text_Level1);
+            }
+            else if ((int)informationLevel == 1)
+            {
+                infoText.transform.GetChild(1).GetComponent<TextMeshPro>().SetText(text_Level2);
+
+                infoText.transform.GetChild(0).gameObject.SetActive(false);
+                infoText.transform.GetChild(1).gameObject.SetActive(true);
+                infoText.transform.GetChild(2).gameObject.SetActive(false);
+            }
+
+            else
+            {
+                infoText.transform.GetChild(2).GetComponent<TextMeshPro>().SetText(text_Level3);
+
+                infoText.transform.GetChild(0).gameObject.SetActive(false);
+                infoText.transform.GetChild(1).gameObject.SetActive(false);
+                infoText.transform.GetChild(2).gameObject.SetActive(true);
+            }
+            infoText.transform.parent = temp.transform;
+        }
+        
+
+        
 
 
         /* Background Environment Model Setting */

@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Emotion
+{
+    Fear,
+    Anger,
+    Sadness,
+    Joy,
+    Disgust,
+    Surprise
+}
+
 public class AvatarActionWithPlayer : MonoBehaviour
 {
     //public VRController player;                         // Player object
@@ -13,10 +23,13 @@ public class AvatarActionWithPlayer : MonoBehaviour
     public GameObject virtualMirror;                    // 가상 거울
 
     public AudioSource conversationSound;               // 대사 음성
-    public AudioClip conversationBlock1_Generic;        // Trial 1의 대사 남성
-    public AudioClip conversationBlock1_NFTbased;       // Trial 1의 대사 여성
-    public AudioClip conversationBlock2_Generic;         // Trial 2의 대사 남성
-    public AudioClip conversationBlock2_NFTbased;        // Trial 2의 대사 여성
+    public AudioClip conversationLines;
+    /*
+    public AudioClip conversationNFT_Trial1;            // NFT trial 1 대사
+    public AudioClip conversationNFT_Trial2;            // NFT trial 2 대사
+    public AudioClip conversationGeneric_Trial1;        // Generic trial 1 대사
+    public AudioClip conversationGeneric_Trial2;        // Generic trial 2 대사
+    */
 
     private float gazeDistance = 6.8f;                  // Avatar가 Player를 응시하기 시작하는 거리, 이 거리 안으로 돌아오면 Avatar가 Player를 쳐다보게 된다.
     private float conversationDistance = 6f;          // Avatar가 Player와 대화를 시작하게 되는 거리, 이 거리 안으로 돌아오면 Avatar가 Player에게 말을 건다.
@@ -32,6 +45,8 @@ public class AvatarActionWithPlayer : MonoBehaviour
     private bool isPlaying;                             // 애니메이션이 재생 중인가?
     private bool isTalking;                             // 인사를 하고 대화를 시작하였는가?
     private bool endTalking;                            //  대사가 처음부터 끝까지 다 진행이 되었는가?
+
+    public Emotion emotion;                              // 아바타의 감정 상태 (Trial 시)
     
     [SerializeField]
     private bool isConversation;                        // 대사를 말하고 있는가?
@@ -64,21 +79,26 @@ public class AvatarActionWithPlayer : MonoBehaviour
         avatarType = (int)programManager.GetComponent<ProgramManager>()._avatarType; //experimentManager.GetComponent<ExperimentManager>().avatarType;
         nowTrial = programManager.GetComponent<ProgramManager>()._nowTrial; ; //experimentManager.GetComponent<ExperimentManager>().nowTrial;
 
+        //나중에는 밑의 switch 코드 말고 이거 쓸거임
+        conversationSound.clip = conversationLines;
+        
+
+        /*
         switch (avatarType)
         {
             case 0:
-                if (nowTrial == 1) conversationSound.clip = conversationBlock1_Generic;
-                else if (nowTrial == 2) conversationSound.clip = conversationBlock2_Generic;
+                if (nowTrial == 1) conversationSound.clip = conversationGeneric_Trial1;
+                else if (nowTrial == 2) conversationSound.clip = conversationGeneric_Trial2;
                 //else if (nowTrial == 3) conversationSound.clip = conversationBlock3_Generic;
                 //else if (nowTrial == 4) conversationSound.clip = conversationBlock4_Generic;
                 break;
             case 1:
-                if (nowTrial == 1) conversationSound.clip = conversationBlock1_NFTbased;
-                else if (nowTrial == 2) conversationSound.clip = conversationBlock2_NFTbased;
+                if (nowTrial == 1) conversationSound.clip = conversationNFT_Trial1;
+                else if (nowTrial == 2) conversationSound.clip = conversationNFT_Trial2;
                 //else if (nowTrial == 3) conversationSound.clip = conversationBlock3_NFTbased;
                 //else if (nowTrial == 4) conversationSound.clip = conversationBlock4_NFTbased;
                 break;
-        }
+        } */
 
         // conversationSound.clip = 
         if (avatarType == 0) idCard.SetActive(false);
@@ -242,6 +262,8 @@ public class AvatarActionWithPlayer : MonoBehaviour
         isConversation = false;
         gameObject.GetComponent<AvatarActionWithPlayer>().endTalking = true;
         conversationSound.Stop();
+        CsvWritingManager.SetEmotion(emotion.ToString());
+        CanvasOnOff.EnableCanvas();
         Debug.Log("Conversation coroutine stop");
     }
 

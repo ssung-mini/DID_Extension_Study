@@ -10,8 +10,13 @@ public class PlayerInformation
 {
     public string name;
     public string description;
-    public string modelFBX;
-    public List<Dictionary<string, string>> attributes;
+    public string image;
+    public string artist;
+    public List<Dictionary<string, string>> attributes; 
+    public string fbxURI;
+    public string info_level_1;
+    public string info_level_2;
+    public string info_level_3;
 
 }
 
@@ -36,7 +41,7 @@ public class JsonParsing : MonoBehaviour
     }
     
     // Resources 폴더 내에 있는 json 파일 파싱
-    public void parseJsonfile()
+    public void parseJsonfile(string playerName)
     {
         if (File.Exists(this.jsonfilePath))
         {
@@ -47,7 +52,15 @@ public class JsonParsing : MonoBehaviour
             foreach (PlayerInformation playerInformation in playerInfoList.model)
             {
                 FBXpath = Application.dataPath + "/Resources/Models/" + playerInformation.name + ".fbx";
-                if (!File.Exists(FBXpath)) downLoadFBX(playerInformation.modelFBX, FBXpath);
+                if (!File.Exists(FBXpath)) downLoadFBX(playerInformation.fbxURI, FBXpath);
+
+                Debug.Log(playerInformation.name);
+                if (playerInformation.name.Equals(playerName))
+                {
+                    ProgramManager.text_Level1 = playerInformation.info_level_1;
+                    ProgramManager.text_Level2 = playerInformation.info_level_2;
+                    ProgramManager.text_Level3 = playerInformation.info_level_3;  
+                }
             }
         }
         else Debug.Log("Can't find " + this.jsonfilePath);
@@ -65,5 +78,14 @@ public class JsonParsing : MonoBehaviour
     T JsonToObject<T>(string jsonData) where T : class
     {
         return JsonUtility.FromJson<T>(jsonData);
+    }
+
+    public void parseJsonText()
+    {
+        if (File.Exists(this.jsonfilePath))
+        {
+            string getJsonText = File.ReadAllText(this.jsonfilePath);
+            
+        }
     }
 }

@@ -1,0 +1,37 @@
+{
+  "model": [
+    {
+      "name":"Guest",
+      "description":"We are HY Univ. Computer Science HCI Lab. It's DID Extension Study.",
+      "image":"https://ipfs.io/ipfs/Qme5WzqhY9xgse9NdP7wF3bL6MdNWedZSNTi7yDjEMThPY",
+      "artist": "HYU HCI Lab.", 
+      "attributes": [
+        {
+            "trait_type": "Unknown", 
+            "value": "Unknown"
+        }
+      ],
+      "fbxURI":"https://ipfs.io/ipfs/QmNstaMBMh99WYBazx2UCnFcQG6P7SwJzcLjriFBLW3ZwT?filename=Red_Racer.fbx",
+      "info_level_1" : "Unknown",
+      "info_level_2" : "Unknown",
+      "info_level_3" : "Unknown"
+    },
+
+    {
+      "attributes": [
+        {
+          "trait_type": "Unknown",
+          "value": "Unknown"
+        }
+      ],
+      "description": "We are HY Univ. Computer Science HCI Lab. This is a test trial.",
+      "fbxURI": "https://ipfs.io/ipfs/QmNstaMBMh99WYBazx2UCnFcQG6P7SwJzcLjriFBLW3ZwT?filename=Red_Racer.fbx",
+      "name": "레드 레이서",
+      "image" :"https://ipfs.io/ipfs/Qme5WzqhY9xgse9NdP7wF3bL6MdNWedZSNTi7yDjEMThPY",
+      "artist": "HYU HCI Lab.", 
+      "info_level_1" : "Levle_1 Level2 \n level3",
+      "info_level_2" : "Leeeeee_2",
+      "info_level_3" : "Leeveveve_3"
+    }
+  ]
+}

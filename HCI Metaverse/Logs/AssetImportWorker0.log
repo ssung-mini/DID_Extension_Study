@@ -15,12 +15,12 @@ E:/HCI Metaverse
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-3565
+3943
 Successfully changed project path to: E:/HCI Metaverse
 E:/HCI Metaverse
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 49.16 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.62 ms.
+Refreshing native plugins compatible for Editor in 46.68 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.58 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path D:/UnityEditor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path E:/HCI Metaverse/Assets
@@ -35,49 +35,49 @@ Initialize mono
 Mono path[0] = 'D:/UnityEditor/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'D:/UnityEditor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/UnityEditor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/UnityEditor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000560 seconds.
+Registered in 0.000516 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 53.96 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 49.73 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.347 seconds
+- Completed reload, in  0.335 seconds
 Domain Reload Profiling:
-	ReloadAssembly (348ms)
-		BeginReloadAssembly (32ms)
+	ReloadAssembly (335ms)
+		BeginReloadAssembly (31ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (279ms)
-			LoadAssemblies (31ms)
+		EndReloadAssembly (269ms)
+			LoadAssemblies (30ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (80ms)
+			SetupTypeCache (77ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (15ms)
-			SetupLoadedEditorAssemblies (129ms)
+			SetupLoadedEditorAssemblies (123ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (54ms)
-				BeforeProcessingInitializeOnLoad (11ms)
+				RefreshPlugins (50ms)
+				BeforeProcessingInitializeOnLoad (10ms)
 				ProcessInitializeOnLoadAttributes (46ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002291 seconds.
+Registered in 0.002176 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\HCI Metaverse\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.41 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 50.71 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.04 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
@@ -99,28 +99,28 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.677 seconds
+- Completed reload, in  0.666 seconds
 Domain Reload Profiling:
-	ReloadAssembly (678ms)
-		BeginReloadAssembly (77ms)
+	ReloadAssembly (666ms)
+		BeginReloadAssembly (72ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (2ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (10ms)
-		EndReloadAssembly (569ms)
-			LoadAssemblies (55ms)
+		EndReloadAssembly (563ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (161ms)
+			SetupTypeCache (157ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (261ms)
+			SetupLoadedEditorAssemblies (258ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (47ms)
-				BeforeProcessingInitializeOnLoad (50ms)
-				ProcessInitializeOnLoadAttributes (148ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (144ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
@@ -129,15 +129,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Refreshing native plugins compatible for Editor in 0.59 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 2647 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.5 MB.
-System memory in use after: 131.7 MB.
+Unloading 2651 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.6 MB.
+System memory in use after: 131.8 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3103.
-Total: 2.366200 ms (FindLiveObjects: 0.134600 ms CreateObjectMapping: 0.054200 ms MarkObjects: 2.090300 ms  DeleteObjects: 0.086100 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3107.
+Total: 2.077000 ms (FindLiveObjects: 0.112800 ms CreateObjectMapping: 0.045700 ms MarkObjects: 1.865000 ms  DeleteObjects: 0.053000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -151,120 +151,270 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/Animations/Talk 1.anim
-  artifactKey: Guid(f316ba4881e6dce40a39f6bcebc4cbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animations/Talk 1.anim using Guid(f316ba4881e6dce40a39f6bcebc4cbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab262858b3d7b6d12e2f5aad4b97143') in 0.077527 seconds 
+  path: Assets/Gidong_test_blender.fbx
+  artifactKey: Guid(14677e845b2e03b40bc0f6462d5bb4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gidong_test_blender.fbx using Guid(14677e845b2e03b40bc0f6462d5bb4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807df7915852f51c2c9ccb24369a3a71') in 0.159258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.314228 seconds.
+  path: Assets/Gidong_test_2.png
+  artifactKey: Guid(e653deac5d28f364b8fef33de25ded17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gidong_test_2.png using Guid(e653deac5d28f364b8fef33de25ded17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6cd5da89143a5030b90c5fb260160d') in 0.057300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.636806 seconds.
+  path: Assets/Gidong_test_blender.fbx
+  artifactKey: Guid(14677e845b2e03b40bc0f6462d5bb4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gidong_test_blender.fbx using Guid(14677e845b2e03b40bc0f6462d5bb4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be6d2046940594249606688b22ce8f52') in 0.099381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.588001 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.005.mat
+  artifactKey: Guid(f1afc9180a8cc78499a73b20e3c96705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.005.mat using Guid(f1afc9180a8cc78499a73b20e3c96705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9770fdee76aa336413c3a26684c779bb') in 0.082545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.189206 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.006.mat
+  artifactKey: Guid(736c3c156f99e1b41b3679c0556de64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.006.mat using Guid(736c3c156f99e1b41b3679c0556de64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b227c2fd15773c4007494fea322600f5') in 0.046343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.007.mat
+  artifactKey: Guid(9c296c2598a574548a553abc8bdb9d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.007.mat using Guid(9c296c2598a574548a553abc8bdb9d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec58193884f8c61c1413b63831dd11b') in 0.037375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.010.mat
+  artifactKey: Guid(be2f5fbc3b1f9d441a5d32321bcc5789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.010.mat using Guid(be2f5fbc3b1f9d441a5d32321bcc5789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a2c7118900bcd448c9c03a79c05cef5') in 0.046851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.008.mat
+  artifactKey: Guid(63a46462b81f68443acc5adaad7e316c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.008.mat using Guid(63a46462b81f68443acc5adaad7e316c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83e34a74aa534d354c88559c5d3b90d') in 0.047577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.011.mat
+  artifactKey: Guid(cc6ecc8325d3f80498b230dbd073ab9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.011.mat using Guid(cc6ecc8325d3f80498b230dbd073ab9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd009b1c0dafb1cac9b64031399b3063') in 0.046786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.009.mat
+  artifactKey: Guid(8e7d00c09b802e04589ab023b84d3824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.009.mat using Guid(8e7d00c09b802e04589ab023b84d3824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e735227585dc98f9a99960ab7d844ab1') in 0.049163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.135746 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.012.mat
+  artifactKey: Guid(6d86a32202d087f409492e3b97b82302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.012.mat using Guid(6d86a32202d087f409492e3b97b82302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd07877aaebaaede3d279e251fec2ab4d') in 0.056667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/JeanTexture.jpg
+  artifactKey: Guid(1b8655576f93cfe47b7a77cf32bbe77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/JeanTexture.jpg using Guid(1b8655576f93cfe47b7a77cf32bbe77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f9fd61b434e6d8ccaf124056596d34f') in 0.046688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.mat
+  artifactKey: Guid(e4df923672bf483439c876ea123ea1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/GRFL_CL1_ShirtA.mat using Guid(e4df923672bf483439c876ea123ea1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697f9c40d32ccec40f14a1978b176490') in 0.051678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/JeanTexture2.jpg
+  artifactKey: Guid(f1b80a101566aaf4da86e89cd3cbb050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/JeanTexture2.jpg using Guid(f1b80a101566aaf4da86e89cd3cbb050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a85f1986cf85d7809a3259e85080f6') in 0.059057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P01Face.mat
+  artifactKey: Guid(1a012a8521d1cb041a5efb05db759a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P01Face.mat using Guid(1a012a8521d1cb041a5efb05db759a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15eefc2aa3048352f2abd67db143206') in 0.049196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/Jean.mat
+  artifactKey: Guid(952dba46c7a5efc45875c2e6163aff1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/Jean.mat using Guid(952dba46c7a5efc45875c2e6163aff1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66382b75a6446ee0624c93dbb0e14a1c') in 0.044787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.571533 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P02Face.mat
+  artifactKey: Guid(a5340aa91b0abd64e9d3b99c30b74c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P02Face.mat using Guid(a5340aa91b0abd64e9d3b99c30b74c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584c44f34ab5b146c31227f6a572aaa9') in 0.053255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P07Face.mat
+  artifactKey: Guid(eeacaa3ce6231554bb9aab9dba6464fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P07Face.mat using Guid(eeacaa3ce6231554bb9aab9dba6464fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ff53363b00fe51b60a3b1887bff0d61') in 0.048820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P10Face.mat
+  artifactKey: Guid(7baa63b7bcdbefa42938d60c31afd96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P10Face.mat using Guid(7baa63b7bcdbefa42938d60c31afd96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd302b6ccf4fb6e0717d501bb82d2bec3') in 0.041152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P13Face.mat
+  artifactKey: Guid(29f1bf631c6620043977763e95431a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P13Face.mat using Guid(29f1bf631c6620043977763e95431a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038d0a68bbbc1b87bd23ad0aa11e23ad') in 0.050367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P04Face.mat
+  artifactKey: Guid(641652d58510d924e8d6007bfd703709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P04Face.mat using Guid(641652d58510d924e8d6007bfd703709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42e5e9b2cf576e8ac7ffcd8116481eb') in 0.048053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P08Face.mat
+  artifactKey: Guid(4a4242a520f948e4bb0fac94a893d80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P08Face.mat using Guid(4a4242a520f948e4bb0fac94a893d80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb206e6a5506f8d50174603581f256e') in 0.045715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P11Face.mat
+  artifactKey: Guid(700e7ada57d78834f8f1161ec0069fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P11Face.mat using Guid(700e7ada57d78834f8f1161ec0069fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c36fd6d01e49b3dbf8ad8d4f4ef8b94') in 0.041563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P15Face.mat
+  artifactKey: Guid(ddb94fc18f57d6748b3702f58d4f8cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P15Face.mat using Guid(ddb94fc18f57d6748b3702f58d4f8cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e788f73830f341f247c481b19a20cad') in 0.045530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P18Face.mat
+  artifactKey: Guid(1e917d67888196140b367c748b901d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P18Face.mat using Guid(1e917d67888196140b367c748b901d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2e9cd2332627eeefd13b76202bfdd5') in 0.047270 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000098 seconds.
-  path: Assets/Resources/Animations/Hip Hop Dancing.anim
-  artifactKey: Guid(10aea103ea46e324ba04e073b24d6a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animations/Hip Hop Dancing.anim using Guid(10aea103ea46e324ba04e073b24d6a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b11b459405bfc299616f926a7ea084c8') in 0.047341 seconds 
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P16Face.mat
+  artifactKey: Guid(4e74c119e2287e04b964e65d2478ec9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P16Face.mat using Guid(4e74c119e2287e04b964e65d2478ec9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52acc280fa576bbbbb23846b20728808') in 0.045408 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/Resources/Animations/Talk 2.anim
-  artifactKey: Guid(59f7b0dd29ae0bb4dbd963ef1799abb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animations/Talk 2.anim using Guid(59f7b0dd29ae0bb4dbd963ef1799abb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01c5ba882705f37b893ff0d30505aaf') in 0.039745 seconds 
+  Time since last request: 0.000084 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P17Face.mat
+  artifactKey: Guid(e1af9ad7a0f266b44860e1c51cda8162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P17Face.mat using Guid(e1af9ad7a0f266b44860e1c51cda8162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d718ec3e9251b9e34df2fe7319de601') in 0.040799 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.326860 seconds.
-  path: Assets/Resources/Animations/Talk 3.anim
-  artifactKey: Guid(bc912df45fb6a904b98e953991285537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animations/Talk 3.anim using Guid(bc912df45fb6a904b98e953991285537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8fcaadfb4274de5d1f5846d2e8cbb20') in 0.084323 seconds 
+  Time since last request: 0.000096 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P06Face.mat
+  artifactKey: Guid(e0ea008b292b75844b3d2da086652d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P06Face.mat using Guid(e0ea008b292b75844b3d2da086652d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e61e1c6245e6903634465c89960913') in 0.044972 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.817876 seconds.
-  path: Assets/Resources/Animations/Talk 4.anim
-  artifactKey: Guid(ca5385a00c3ace6459aa12ce1808a70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animations/Talk 4.anim using Guid(ca5385a00c3ace6459aa12ce1808a70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45bf4ed79f22977efcf36ac649d8ff81') in 0.063419 seconds 
+  Time since last request: 0.000168 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P09Face.mat
+  artifactKey: Guid(f6c5229bb3000a24ea3eed7992f212cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P09Face.mat using Guid(f6c5229bb3000a24ea3eed7992f212cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb5f7819580dc9a994c37bb47cdf43e4') in 0.048397 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.303731 seconds.
-  path: Assets/Resources/Animations/Talk 5.anim
-  artifactKey: Guid(3c2f84aca89afb54f8ead9f53087ec2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animations/Talk 5.anim using Guid(3c2f84aca89afb54f8ead9f53087ec2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013cfe3952ddc52928bd49b91c795200') in 0.051139 seconds 
+  Time since last request: 0.000093 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P14Face.mat
+  artifactKey: Guid(ed2884aca8f8c18488a8320a6424af8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P14Face.mat using Guid(ed2884aca8f8c18488a8320a6424af8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d4045a519ac4a2c7755d01bbf8a399') in 0.095240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P19Face.mat
+  artifactKey: Guid(e1045f8b40ad7a64aa2724699983e93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P19Face.mat using Guid(e1045f8b40ad7a64aa2724699983e93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08301a1d3f4d008f9236dda4d9b95ab7') in 0.043056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P20Face.mat
+  artifactKey: Guid(4def5d0258f166b47b84e433fbce82f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P20Face.mat using Guid(4def5d0258f166b47b84e433fbce82f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2fccf9ac84780229275b82049600a0b') in 0.067405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P24Face.mat
+  artifactKey: Guid(80c465def5c468a47b2ff2274c2ba8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P24Face.mat using Guid(80c465def5c468a47b2ff2274c2ba8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87c6f9939a78b4b38fa8303f2e9a9b0') in 0.070748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P21Face.mat
+  artifactKey: Guid(952e3d2e3042a2c4597bc6c935f73ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P21Face.mat using Guid(952e3d2e3042a2c4597bc6c935f73ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea83107b825dd069cfcb981bf8302a7') in 0.072990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P23Face.mat
+  artifactKey: Guid(7a1f7f0c01e86ec4e838d7b30fefe81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P23Face.mat using Guid(7a1f7f0c01e86ec4e838d7b30fefe81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fee842e7bbfa23416e917de136fc7b8') in 0.067970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P22Face.mat
+  artifactKey: Guid(09337a9d5d23dfa4b8cb2a35a61341c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P22Face.mat using Guid(09337a9d5d23dfa4b8cb2a35a61341c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '717632b7b7181f271cf7bdcea95d2051') in 0.042682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P12Face.mat
+  artifactKey: Guid(9e97530c6ff552449b66702e892fd904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P12Face.mat using Guid(9e97530c6ff552449b66702e892fd904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f620e3ae72a8c915a8ba6451f7e5cb') in 0.064417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P03Face.mat
+  artifactKey: Guid(4c5e54345207a9245a1f2bc51d53c19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P03Face.mat using Guid(4c5e54345207a9245a1f2bc51d53c19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658072008edd2e10d18e4051a6e2bcbe') in 0.070917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/Pants.jpg
+  artifactKey: Guid(da6ba5f15969d7d4090c34e94cf6aa70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/Pants.jpg using Guid(da6ba5f15969d7d4090c34e94cf6aa70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b94be3e531c656f9967b3bfbb86bc3a0') in 0.077438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/StripedTexture.jpg
+  artifactKey: Guid(e3b2423b45ccc98498b837482e746b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/StripedTexture.jpg using Guid(e3b2423b45ccc98498b837482e746b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8dec8cbdfc7d28787c8290558fdc3f9') in 0.037649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/ShirtTexture.jpg
+  artifactKey: Guid(4ef9ffcfdd24f3e439c5cac0fb69cfd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/ShirtTexture.jpg using Guid(4ef9ffcfdd24f3e439c5cac0fb69cfd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab4c8f420622bce0b2add664ffe593a') in 0.079989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Cloth_Material/P05Face.mat
+  artifactKey: Guid(1ee24d42522dee04d9cddb19ca6b712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Cloth_Material/P05Face.mat using Guid(1ee24d42522dee04d9cddb19ca6b712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b864c235cc280663778b12ad2e019e') in 0.047233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 236.693262 seconds.
+  path: Assets/Animations/NPC_M Controller.controller
+  artifactKey: Guid(3c417d62ef3f19a448249cdfc9eb0cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/NPC_M Controller.controller using Guid(3c417d62ef3f19a448249cdfc9eb0cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ed80ffa9b166f27ed8a27b2cff8bf0') in 0.027260 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002132 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\HCI Metaverse\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in E:\HCI Metaverse\Library\PackageCache\com.unity.xr.oculus@1.12.0\Runtime\OculusLoader.cs:251 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in E:\HCI Metaverse\Library\PackageCache\com.unity.xr.oculus@1.12.0\Runtime\OculusLoader.cs:236 
-  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <3371b3e2e5754acd87e600e068350da5>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.597 seconds
-Domain Reload Profiling:
-	ReloadAssembly (598ms)
-		BeginReloadAssembly (68ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (499ms)
-			LoadAssemblies (55ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (160ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (202ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (2ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (140ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 2610 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 129.3 MB.
-System memory in use after: 129.5 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3108.
-Total: 1.952000 ms (FindLiveObjects: 0.116300 ms CreateObjectMapping: 0.040100 ms MarkObjects: 1.780800 ms  DeleteObjects: 0.014000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002065 seconds.
+Registered in 0.002151 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\HCI Metaverse\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.73 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Preloading 1 native plugins for Editor in 0.09 ms.
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in E:\HCI Metaverse\Library\PackageCache\com.unity.xr.oculus@1.12.0\Runtime\OculusLoader.cs:251 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in E:\HCI Metaverse\Library\PackageCache\com.unity.xr.oculus@1.12.0\Runtime\OculusLoader.cs:236 
@@ -281,42 +431,372 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.768 seconds
+- Completed reload, in  0.732 seconds
 Domain Reload Profiling:
-	ReloadAssembly (768ms)
-		BeginReloadAssembly (83ms)
+	ReloadAssembly (733ms)
+		BeginReloadAssembly (79ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (2ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (648ms)
-			LoadAssemblies (67ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (612ms)
+			LoadAssemblies (63ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (220ms)
+			SetupTypeCache (191ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (252ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (273ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (2ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (56ms)
-				ProcessInitializeOnLoadAttributes (174ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.27 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.4 MB.
+System memory in use after: 146.6 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3158.
+Total: 2.206200 ms (FindLiveObjects: 0.182800 ms CreateObjectMapping: 0.057400 ms MarkObjects: 1.943600 ms  DeleteObjects: 0.021800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 364.778550 seconds.
+  path: Assets/DID old/PhotoReal_Avatar/Jihwan/IdentificationJihwan 1.prefab
+  artifactKey: Guid(fc7bc061c80fcd6498d5ff05e10184e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/PhotoReal_Avatar/Jihwan/IdentificationJihwan 1.prefab using Guid(fc7bc061c80fcd6498d5ff05e10184e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe574c4065ab441d0acb2b9a26aae755') in 0.106745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.994838 seconds.
+  path: Assets/IdentificationGidong.prefab
+  artifactKey: Guid(fc7bc061c80fcd6498d5ff05e10184e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IdentificationGidong.prefab using Guid(fc7bc061c80fcd6498d5ff05e10184e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab5569c17dca861a574b98461d254c5') in 0.075498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 121.175997 seconds.
+  path: Assets/IdentificationGidong.prefab
+  artifactKey: Guid(fc7bc061c80fcd6498d5ff05e10184e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IdentificationGidong.prefab using Guid(fc7bc061c80fcd6498d5ff05e10184e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90b7cbd7ad34ee2ca3103a50462f28e') in 0.050664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.045663 seconds.
+  path: Assets/DID old/CC_Assets/DID_Avatar/Example.Fbx
+  artifactKey: Guid(89010dcc9e229e9469121ceb77230368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/CC_Assets/DID_Avatar/Example.Fbx using Guid(89010dcc9e229e9469121ceb77230368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c3cfc50f4cf5ef403ce19f5046a086') in 1.743526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.578432 seconds.
+  path: Assets/DID old/CC_Assets/Female2/여자2_animator.controller
+  artifactKey: Guid(1873165432a8bba4ea65fd53295897dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/CC_Assets/Female2/여자2_animator.controller using Guid(1873165432a8bba4ea65fd53295897dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a73e31266a4d2f56ffe92959871e309c') in 0.044720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 215.158452 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda1c90a428b5736adf5acc6e44e2fe0') in 0.224270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 129.538748 seconds.
+  path: Assets/DID old/Shoes Pack Scanned/Prefabs/15R.prefab
+  artifactKey: Guid(e9f7534392473b641ac0b65a98bfa8c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/Shoes Pack Scanned/Prefabs/15R.prefab using Guid(e9f7534392473b641ac0b65a98bfa8c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2126be1558d9dba269fba1b9a18bf957') in 0.095399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/DID old/Shoes Pack Scanned/Prefabs/17L.prefab
+  artifactKey: Guid(3f4bd45fc3b5ec44d916aea82e329bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/Shoes Pack Scanned/Prefabs/17L.prefab using Guid(3f4bd45fc3b5ec44d916aea82e329bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae88ce9c8819d913a07034a9a18eb207') in 0.090487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/DID old/Shoes Pack Scanned/Prefabs/17R.prefab
+  artifactKey: Guid(fdbe39da9975c0c439bfacf395083074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/Shoes Pack Scanned/Prefabs/17R.prefab using Guid(fdbe39da9975c0c439bfacf395083074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca51adc192f46794e21868826d240f8') in 0.055719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/DID old/Shoes Pack Scanned/Prefabs/16L.prefab
+  artifactKey: Guid(8a8eb2150023d444f88ddae1c2cb4a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/Shoes Pack Scanned/Prefabs/16L.prefab using Guid(8a8eb2150023d444f88ddae1c2cb4a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505371b88e3780e2452e96f1237d5598') in 0.078744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/DID old/Shoes Pack Scanned/Prefabs/16R.prefab
+  artifactKey: Guid(58dfc0b8f15882f4d889655030b578f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DID old/Shoes Pack Scanned/Prefabs/16R.prefab using Guid(58dfc0b8f15882f4d889655030b578f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa96fd6596c1fd7f9e67a68d53c57c17') in 0.049341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.465311 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529b13ec643285078119dc1fd056778f') in 0.178110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.494068 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53898cd57d45291c279ac6a4f5914f4e') in 0.138500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.498793 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '108d162a0152ee8ed8bff9d31d85ae5e') in 0.150497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.099480 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f00c58ffaba1783f861672f705c4d4e') in 0.134832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.346702 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ccd73eda330bd7f633a69579dfa7f3') in 0.125618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.535800 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049aa400c763e887aad5d29eb33758f0') in 0.131094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.138587 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58a2d8b259f24394ec856d83f340886') in 0.133085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.900682 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5da2e849358a9065f21b2f41ff0692') in 0.180840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.462625 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9684dc61e8287544f0d88662956925d1') in 0.148081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.490137 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3139e6c978ab375b17715310016663') in 0.174330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.340063 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96aa92da506089aec6efddfcf0b481b') in 0.132099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.348611 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31559b016467bba12275d0a1e55daea1') in 0.139473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.332847 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6240f915b59471ea4ed6f0de6d105a57') in 0.132900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.945250 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6aa4c05f1858f1e21605644dd5f3e4b') in 0.147434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.882708 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d04ec3666b70a883121aa56d7508b21') in 0.159647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.275574 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27102ab59d6b6885d296afffbf252fb2') in 0.160829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.291271 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5930bf5f49e697fb2c4e11019b045454') in 0.135278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.884477 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '320caa50c2de94243eca745588552d12') in 0.159222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.748212 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba220ba190941632e96fcbfac405b156') in 0.147846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.093033 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ae1aeb8900580800d5e66aaa87ecc7') in 0.173861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.480249 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb7a778149e9e92ccf320b2e42bc726') in 0.151469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.479137 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379525afa2de049c493027c2b2178a0e') in 0.167539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.862627 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825dccd75f80f0a7a4301fc437f4288d') in 0.155165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.553457 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8baabe6e0da5c22bef9a89e006787c37') in 0.196037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.167566 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18af6a7cc0c3bd0b7315b70dcdddccb4') in 0.177840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.659854 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9447b56e70e9fd024ac85d187f120e0a') in 0.140853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.889247 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c763928136cf2c608f2ecdb033ce0ab0') in 0.135258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.888774 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3b4f998a25de879c1219cef4d0e758') in 0.148368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.282305 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e12a0eb49904c40d8ef67656459c47') in 0.163795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.315974 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1047e4fba9201d71758dcdb0cd7a17e') in 0.173889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.667785 seconds.
+  path: Assets/Resources/Core/NFT_Avatar/Gidong.prefab
+  artifactKey: Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Core/NFT_Avatar/Gidong.prefab using Guid(392b794b0c4fd7040b5b708a78558dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81c13354a65012beff3b05db5c66d08') in 0.145182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 104.388203 seconds.
+  path: Assets/GidongAvatar.fbx
+  artifactKey: Guid(14677e845b2e03b40bc0f6462d5bb4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GidongAvatar.fbx using Guid(14677e845b2e03b40bc0f6462d5bb4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8f83c48d691974284c7168c2b04c46') in 0.166787 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003387 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\HCI Metaverse\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in E:\HCI Metaverse\Library\PackageCache\com.unity.xr.oculus@1.12.0\Runtime\OculusLoader.cs:251 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in E:\HCI Metaverse\Library\PackageCache\com.unity.xr.oculus@1.12.0\Runtime\OculusLoader.cs:236 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <3371b3e2e5754acd87e600e068350da5>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.904 seconds
+Domain Reload Profiling:
+	ReloadAssembly (905ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (748ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (268ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (290ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 2610 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 129.3 MB.
-System memory in use after: 129.6 MB.
+Unloading 2614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.9 MB.
+System memory in use after: 147.1 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3113.
-Total: 2.592500 ms (FindLiveObjects: 0.149600 ms CreateObjectMapping: 0.053900 ms MarkObjects: 2.367400 ms  DeleteObjects: 0.020800 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3166.
+Total: 2.670400 ms (FindLiveObjects: 0.140600 ms CreateObjectMapping: 0.052800 ms MarkObjects: 2.422000 ms  DeleteObjects: 0.052700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

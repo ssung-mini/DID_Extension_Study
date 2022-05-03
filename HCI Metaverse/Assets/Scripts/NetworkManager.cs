@@ -56,14 +56,15 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         {
             connectionInfoText.text = "Loading ...";
 
-            jsonparsing.setJsonFilePath("Test_FBX_File.json");
-            jsonparsing.parseJsonfile();
+            jsonparsing.setJsonFilePath("MintedAvatarList.json");
+            jsonparsing.parseJsonfile(playerName.text);
 
+            
             foreach (PlayerInformation playerModel in jsonparsing.playerInfoList.model)
             {
                 Debug.Log("ÇÁ¸®ÆÕ »ý¼º");
                 PlayerSetting.doCreatePrefab(playerModel.name);
-                NPCSetting.doCreateNPCPrefab(playerModel.name);
+                //NPCSetting.doCreateNPCPrefab(playerModel.name);
             }
 
             PhotonNetwork.JoinRandomRoom();
